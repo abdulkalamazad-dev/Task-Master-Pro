@@ -82,5 +82,5 @@ npm run build
 
 
 🌟**Developer**
--****Designed and developed by 👨‍💻Abdul Kalam Azad🌟****
+  ****Designed and developed by 👨‍💻Abdul Kalam Azad🌟****
 
