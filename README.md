@@ -47,9 +47,8 @@
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/abdulkalamazad-dev/Task-Master.git
-cd Task-Master
-
+git clone https://github.com/abdulkalamazad-dev/Task-Master-Pro.git
+cd Task-Master-Pro
 ```
 
 ### 2. Install dependencies:
