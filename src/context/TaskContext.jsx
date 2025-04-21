@@ -99,10 +99,8 @@ export function TaskProvider({ children }) {
     if (savedTasks) {
       dispatch({ 
         type: "FETCH_TASKS_SUCCESS", 
-        payload: JSON.parse(savedTasks) 
+        payload: JSON.parse(savedTasks)
       });
-    } else {
-      fetchTasks();
     }
     
     if ("Notification" in window) {
@@ -125,7 +123,7 @@ export function TaskProvider({ children }) {
               if (Notification.permission === "granted") {
                 const notification = new Notification(`Task Reminder: ${task.title}`, {
                   body: `Your task "${task.title}" is due now!`,
-                  icon: '/notification-icon.png'
+                  icon: '/notificationicon.png'
                 });
                 
                 try {
@@ -148,10 +146,11 @@ export function TaskProvider({ children }) {
           }
         }
       });
-    }, 10000);
+    }, 10000); 
     
     return () => clearInterval(checkReminders);
   }, []); 
+
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(state.tasks));
@@ -305,6 +304,7 @@ export function TaskProvider({ children }) {
     
     return filtered;
   };
+
 
   const contextValue = useMemo(() => ({
     ...state,
