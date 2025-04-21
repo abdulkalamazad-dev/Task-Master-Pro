@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer, useEffect, useRef, useMemo } from "react";
+import notificationIcon from '../assets/notification-icon.png';
 
 const TaskContext = createContext();
 
@@ -123,7 +124,7 @@ export function TaskProvider({ children }) {
               if (Notification.permission === "granted") {
                 const notification = new Notification(`Task Reminder: ${task.title}`, {
                   body: `Your task "${task.title}" is due now!`,
-                  icon: '/notificationicon.png'
+                  icon: notificationIcon
                 });
                 
                 try {
