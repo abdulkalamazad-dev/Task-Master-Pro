@@ -81,6 +81,6 @@ npm run build
 - 🔗 **Task Dependencies** :- Link related tasks to build logical workflows and sequences.
 
 
-🌟**Developer**
+🌟**Developer** :-
   ****Designed and developed by 👨‍💻Abdul Kalam Azad🌟****
 
